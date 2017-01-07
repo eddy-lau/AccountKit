@@ -1,16 +1,16 @@
 Pod::Spec.new do |s|
   s.name         = "AccountKit"
-  s.version      = "4.18.0"
-  s.summary      = "AccountKit"
-  s.description  = "AccountKit long descriptoin"
-  s.homepage     = "http://www.twilio.com/docs/api/voice-sdk"
+  s.version      = "0.0.1"
+  s.summary      = "Account Kit"
+  s.description  = "Account Kit lets people quickly register for and login to your app by using just their phone number or email address — no password needed. It's reliable, easy to use and gives you a choice about how you sign up for apps. "
+  s.homepage     = "https://developers.facebook.com/docs/accountkit"
   s.platform     = :ios, "8.0"
   s.license      = {
     :type => "Commercial",
-    :text => "Copyright 2011-2016 Twilio. All rights reserved. Use of this software is subject to the terms and conditions of the Twilio Terms of Service located at http://www.twilio.com/legal/tos"
+    :text => "Copyright 2011-2016 Facebook. "
   }
   s.author       = { "Facebook" => "facebook.com" }
-  s.source       = { :git => 'https://github.com/eddy-lau/AccountKit.git'  }
-  s.vendored_frameworks   = "AccountKit.framework"
+  s.source       = { :git => 'https://github.com/eddy-lau/AccountKit.git', :tag => s.version.to_s   }
+  s.vendored_frameworks   = "./AccountKit.framework"
   s.requires_arc          = true
 end
